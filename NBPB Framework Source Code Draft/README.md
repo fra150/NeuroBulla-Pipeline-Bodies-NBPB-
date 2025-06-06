@@ -1,5 +1,7 @@
 
 # Structure 
+
+```
 nbpb-project/                 
 ├── nbpb/                    
 │   ├── __init__.py
@@ -29,7 +31,7 @@ nbpb-project/
 ├── README.md                 
 ├── pyproject.toml           
 └── setup.py                 
-
+``` 
 # NBPB - NeuroBulla Pipeline Bodies 🧠✨
 
 > A Biologically-Inspired Supervisory Framework for Machine-Learning Pipelines
