@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: nbpb
+Version: 0.1.0
+Summary: NeuroBulla Pipeline Bodies – A biologically-inspired supervisory framework for machine-learning pipelines
+Home-page: https://github.com/fbulla/nbpb
+Author: Francesco Bulla
+Author-email: 150francescobulla@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.11.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: seaborn>=0.11.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.8; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=0.5; extra == "docs"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# NBPB - NeuroBulla Pipeline Bodies
+
+A Biologically-Inspired Supervisory Framework for Machine-Learning Pipelines
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Quick Start
+
+```python
+from nbpb import NBPBNucleus, PyTorchHook
+
+# Initialize NBPB
+nucleus = NBPBNucleus()
+hook = PyTorchHook(nucleus)
+
+# Use in your training loop
+hook.start_training()
+# ... your training code ...
+hook.stop_training()
+```
+
+## Demo
+
+Run the demo script:
+
+```bash
+python examples/demo_data.py
+```

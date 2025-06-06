@@ -1,0 +1,2 @@
+[console_scripts]
+nbpb = nbpb.cli:main
